@@ -1,13 +1,13 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-async function render() {
+async function render(pathname = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
 
   return worker.fetch(
-    new Request("http://localhost/", {
+    new Request(`http://localhost${pathname}`, {
       headers: { accept: "text/html" },
     }),
     {
@@ -36,4 +36,17 @@ test("server-renders Jamie's portfolio", async () => {
   assert.match(html, /Exploring practical intersections/);
   assert.doesNotMatch(html, /Let(?:&#x27;|&apos;|')s talk|Start a conversation/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
+});
+
+test("server-renders the Chinese portfolio", async () => {
+  const response = await render("/zh");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /构建智能/);
+  assert.match(html, /本地大模型评测/);
+  assert.match(html, /博物馆智能/);
+  assert.match(html, /具身交互/);
+  assert.match(html, /技术应当拓展人们理解、创造与体验世界的方式/);
+  assert.match(html, /href="\/"[^>]*>EN</);
 });

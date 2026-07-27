@@ -24,6 +24,13 @@ export async function generateMetadata(): Promise<Metadata> {
     title: "Jamie — AI, Robotics & Digital Heritage",
     description:
       "Jamie builds useful technology across artificial intelligence, robotics, and museum digitalization.",
+    alternates: {
+      canonical: "/",
+      languages: {
+        en: "/",
+        "zh-CN": "/zh",
+      },
+    },
     icons: {
       icon: "/favicon.svg",
       shortcut: "/favicon.svg",
