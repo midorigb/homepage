@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Jamie Ding, back to top">
+        <a className="brand" href="#top" aria-label="Jamie, back to top">
           JD<span className="brand-dot">.</span>
         </a>
         <nav aria-label="Primary navigation">
@@ -63,7 +63,7 @@ export default function Home() {
         </h1>
         <div className="hero-footer">
           <p>
-            I&apos;m Jamie Ding — working across artificial intelligence,
+            I&apos;m Jamie — working across artificial intelligence,
             robotics, and museum digitalization to make complex technology
             useful, tangible, and human.
           </p>
@@ -161,7 +161,7 @@ export default function Home() {
           and digital heritage.
         </p>
         <div className="footer-bottom">
-          <span>Jamie Ding © 2026</span>
+          <span>Jamie © 2026</span>
           <a href="#top">Back to top ↑</a>
         </div>
       </footer>

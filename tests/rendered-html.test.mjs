@@ -22,13 +22,13 @@ async function render() {
   );
 }
 
-test("server-renders Jamie Ding's portfolio", async () => {
+test("server-renders Jamie's portfolio", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
 
   const html = await response.text();
-  assert.match(html, /Jamie Ding — AI, Robotics &amp; Digital Heritage/);
+  assert.match(html, /Jamie — AI, Robotics &amp; Digital Heritage/);
   assert.match(html, /Building intelligence/);
   assert.match(html, /Local LLM Benchmark/);
   assert.match(html, /Museum Intelligence/);

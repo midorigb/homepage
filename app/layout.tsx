@@ -21,21 +21,21 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase,
-    title: "Jamie Ding — AI, Robotics & Digital Heritage",
+    title: "Jamie — AI, Robotics & Digital Heritage",
     description:
-      "Jamie Ding builds useful technology across artificial intelligence, robotics, and museum digitalization.",
+      "Jamie builds useful technology across artificial intelligence, robotics, and museum digitalization.",
     icons: {
       icon: "/favicon.svg",
       shortcut: "/favicon.svg",
     },
     openGraph: {
-      title: "Jamie Ding — AI, Robotics & Digital Heritage",
+      title: "Jamie — AI, Robotics & Digital Heritage",
       description: "Building intelligence for the physical and cultural world.",
       images: [new URL("/og.png", metadataBase).toString()],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Jamie Ding — AI, Robotics & Digital Heritage",
+      title: "Jamie — AI, Robotics & Digital Heritage",
       description: "Building intelligence for the physical and cultural world.",
       images: [new URL("/og.png", metadataBase).toString()],
     },
