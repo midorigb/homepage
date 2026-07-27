@@ -46,9 +46,6 @@ export default function Home() {
           <a href="#practice">Practice</a>
           <a href="#about">About</a>
         </nav>
-        <a className="contact-link" href="#contact">
-          Let&apos;s talk <span aria-hidden="true">↗</span>
-        </a>
       </header>
 
       <section className="hero" id="top">
@@ -153,12 +150,11 @@ export default function Home() {
         </div>
       </section>
 
-      <footer id="contact">
-        <p className="eyebrow">Start a conversation</p>
-        <h2>Have an ambitious idea?</h2>
+      <footer>
+        <p className="eyebrow">Ongoing practice</p>
+        <h2>Exploring practical intersections.</h2>
         <p className="footer-note">
-          I&apos;m open to conversations around AI systems, robotics products,
-          and digital heritage.
+          Across artificial intelligence, robotics, and digital heritage.
         </p>
         <div className="footer-bottom">
           <span>Jamie © 2026</span>

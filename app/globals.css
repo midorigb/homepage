@@ -39,7 +39,7 @@ main {
   position: relative;
   z-index: 10;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr auto;
   align-items: center;
   min-height: 82px;
   padding: 0 4.5vw;
@@ -68,21 +68,13 @@ nav {
 }
 
 nav a,
-.contact-link,
 .footer-bottom a {
   transition: color 180ms ease;
 }
 
 nav a:hover,
-.contact-link:hover,
 .footer-bottom a:hover {
   color: var(--acid);
-}
-
-.contact-link {
-  justify-self: end;
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
 }
 
 .hero {

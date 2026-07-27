@@ -33,5 +33,7 @@ test("server-renders Jamie's portfolio", async () => {
   assert.match(html, /Local LLM Benchmark/);
   assert.match(html, /Museum Intelligence/);
   assert.match(html, /Embodied Interfaces/);
+  assert.match(html, /Exploring practical intersections/);
+  assert.doesNotMatch(html, /Let(?:&#x27;|&apos;|')s talk|Start a conversation/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
 });
