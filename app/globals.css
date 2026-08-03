@@ -447,6 +447,7 @@ footer h2 {
 }
 
 main[lang="zh-CN"] footer h2 {
+  font-size: clamp(2.4rem, 5vw, 5.4rem);
   line-height: 1.1;
   letter-spacing: -0.035em;
 }
@@ -586,7 +587,6 @@ main[lang="zh-CN"] footer h2 {
   }
 
   main[lang="zh-CN"] footer h2 {
-    font-size: 3.35rem;
     line-height: 1.14;
   }
 
