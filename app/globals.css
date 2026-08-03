@@ -442,8 +442,13 @@ footer h2 {
   margin: 2.5rem 0 1.5rem;
   font-size: clamp(4rem, 10vw, 10rem);
   font-weight: 600;
-  line-height: 0.88;
-  letter-spacing: -0.075em;
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+main[lang="zh-CN"] footer h2 {
+  line-height: 1.1;
+  letter-spacing: -0.035em;
 }
 
 .footer-note {
@@ -578,6 +583,11 @@ footer h2 {
 
   footer h2 {
     font-size: 4rem;
+  }
+
+  main[lang="zh-CN"] footer h2 {
+    font-size: 3.35rem;
+    line-height: 1.14;
   }
 
   .footer-bottom {
