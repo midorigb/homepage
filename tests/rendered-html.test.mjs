@@ -13,7 +13,7 @@ test("server-renders the English capability portfolio", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Jamie — Technology &amp; Product Architect/);
-  assert.match(html, /I design useful systems/);
+  assert.match(html, /I design digital platforms/);
   assert.match(html, /Define/);
   assert.match(html, /Build/);
   assert.match(html, /Augment/);
@@ -21,7 +21,7 @@ test("server-renders the English capability portfolio", async () => {
   assert.match(html, /Museum digital resource system/);
   assert.match(html, /Local LLM evaluation workspace/);
   assert.match(html, /Embodied interaction concepts/);
-  assert.match(html, /Selected projects and ongoing experiments/);
+  assert.match(html, /Three projects, at three different stages/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
 });
 
@@ -30,7 +30,7 @@ test("server-renders the Chinese capability portfolio", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /Jamie — 技术与产品架构师/);
-  assert.match(html, /为复杂世界/);
+  assert.match(html, /设计数字平台/);
   assert.match(html, /定义/);
   assert.match(html, /构建/);
   assert.match(html, /赋能/);
