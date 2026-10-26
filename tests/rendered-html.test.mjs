@@ -33,7 +33,8 @@ test("server-renders Jamie's portfolio", async () => {
   assert.match(html, /Local LLM Benchmark/);
   assert.match(html, /Museum Intelligence/);
   assert.match(html, /Embodied Interfaces/);
-  assert.match(html, /Digital Resources/);
+  assert.match(html, /Digital Heritage Experiences/);
+  assert.match(html, /Digital Resource Governance/);
   assert.match(html, /Exploring practical intersections/);
   assert.doesNotMatch(html, /Let(?:&#x27;|&apos;|')s talk|Start a conversation/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
@@ -48,8 +49,9 @@ test("server-renders the Chinese portfolio", async () => {
   assert.match(html, /本地大模型评测/);
   assert.match(html, /博物馆智能/);
   assert.match(html, /具身交互/);
-  assert.match(html, /数字资源/);
-  assert.match(html, /制定博物馆数字资源标准规范/);
+  assert.match(html, /数字文化体验/);
+  assert.match(html, /数字资源治理/);
+  assert.match(html, /博物馆数字资源标准、元数据体系、生产流程与平台架构/);
   assert.match(html, /技术应当拓展人们理解、创造与体验世界的方式/);
   assert.match(html, /href="\/"[^>]*>EN</);
 });
