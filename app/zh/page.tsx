@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { PortfolioPage } from "../portfolio-page";
 
 export const metadata: Metadata = {
-  title: "Jamie — 人工智能、机器人与数字文化遗产",
-  description: "Jamie 专注于人工智能、机器人与博物馆数字化，探索技术与现实的交汇。",
+  title: "Jamie — 产品、系统与应用智能",
+  description: "把复杂资源转化为可运行的系统，并进一步赋予智能与真实世界的交互能力。",
   alternates: {
     canonical: "/zh",
     languages: {
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Jamie — 人工智能、机器人与数字文化遗产",
-    description: "构建智能，连接物理世界与文化世界。",
+    title: "Jamie — 产品、系统与应用智能",
+    description: "从可信数字资源到智能产品与真实世界体验。",
     locale: "zh_CN",
   },
 };

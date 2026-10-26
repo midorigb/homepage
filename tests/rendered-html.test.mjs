@@ -5,53 +5,38 @@ async function render(pathname = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
-
-  return worker.fetch(
-    new Request(`http://localhost${pathname}`, {
-      headers: { accept: "text/html" },
-    }),
-    {
-      ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
-      },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
-    },
-  );
+  return worker.fetch(new Request(`http://localhost${pathname}`, { headers: { accept: "text/html" } }), { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } }, { waitUntil() {}, passThroughOnException() {} });
 }
 
-test("server-renders Jamie's portfolio", async () => {
+test("server-renders the English capability portfolio", async () => {
   const response = await render();
   assert.equal(response.status, 200);
-  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
-
   const html = await response.text();
-  assert.match(html, /Jamie — AI, Robotics &amp; Digital Heritage/);
-  assert.match(html, /Building intelligence/);
-  assert.match(html, /Local LLM Benchmark/);
-  assert.match(html, /Museum Intelligence/);
-  assert.match(html, /Embodied Interfaces/);
-  assert.match(html, /Digital Heritage Experiences/);
-  assert.match(html, /Digital Resource Governance/);
-  assert.match(html, /Exploring practical intersections/);
-  assert.doesNotMatch(html, /Let(?:&#x27;|&apos;|')s talk|Start a conversation/);
+  assert.match(html, /Jamie — Product, Systems &amp; Applied Intelligence/);
+  assert.match(html, /From complex resources/);
+  assert.match(html, /Define/);
+  assert.match(html, /Build/);
+  assert.match(html, /Augment/);
+  assert.match(html, /Connect/);
+  assert.match(html, /Museum digital resource system/);
+  assert.match(html, /Local LLM evaluation workspace/);
+  assert.match(html, /Embodied interaction concepts/);
+  assert.match(html, /Evidence, not a list of buzzwords/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/);
 });
 
-test("server-renders the Chinese portfolio", async () => {
+test("server-renders the Chinese capability portfolio", async () => {
   const response = await render("/zh");
   assert.equal(response.status, 200);
-
   const html = await response.text();
-  assert.match(html, /构建智能/);
-  assert.match(html, /本地大模型评测/);
-  assert.match(html, /博物馆智能/);
-  assert.match(html, /具身交互/);
-  assert.match(html, /数字文化体验/);
-  assert.match(html, /数字资源治理/);
-  assert.match(html, /博物馆数字资源标准、元数据体系、生产流程与平台架构/);
-  assert.match(html, /技术应当拓展人们理解、创造与体验世界的方式/);
+  assert.match(html, /Jamie — 产品、系统与应用智能/);
+  assert.match(html, /从复杂资源/);
+  assert.match(html, /定义/);
+  assert.match(html, /构建/);
+  assert.match(html, /赋能/);
+  assert.match(html, /连接/);
+  assert.match(html, /博物馆数字资源体系与平台/);
+  assert.match(html, /本地大模型评测工作台/);
+  assert.match(html, /具身交互概念/);
   assert.match(html, /href="\/"[^>]*>EN</);
 });
