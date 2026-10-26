@@ -41,7 +41,6 @@ const content = {
     toolkit: ["Digital resource standards", "Metadata", "Product architecture", "Multimodal AI", "LLM evaluation", "Agents", "MCP", "Human-in-the-loop", "Robotics", "HRI"],
     closingEyebrow: "Jamie · Technology & Product Architect",
     closingHeading: "Digital resources · Knowledge systems · Applied AI",
-    closingNote: "Selected project work and current R&D.",
     backToTop: "Back to top ↑",
   },
   zh: {
@@ -84,7 +83,6 @@ const content = {
     toolkit: ["数字资源标准", "元数据", "产品架构", "多模态 AI", "大模型评测", "智能体", "MCP", "人在回路", "机器人", "人机交互"],
     closingEyebrow: "Jamie · 技术与产品架构师",
     closingHeading: "数字资源 · 知识系统 · 应用 AI",
-    closingNote: "代表项目与当前研发。",
     backToTop: "返回顶部 ↑",
   },
 } as const;
@@ -120,7 +118,7 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
         <div className="focus-grid">{copy.focusAreas.map(([title, description], index) => <article key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{description}</p></article>)}</div>
         <div className="toolkit"><p>{copy.toolkitLabel}</p><ul>{copy.toolkit.map((item) => <li key={item}>{item}</li>)}</ul></div>
       </section>
-      <footer><p className="eyebrow">{copy.closingEyebrow}</p><h2>{copy.closingHeading}</h2><p className="footer-note">{copy.closingNote}</p><div className="footer-bottom"><span>Jamie © 2026</span><a href="#top">{copy.backToTop}</a></div></footer>
+      <footer><p className="eyebrow">{copy.closingEyebrow}</p><h2>{copy.closingHeading}</h2><div className="footer-bottom"><span>Jamie © 2026</span><a href="#top">{copy.backToTop}</a></div></footer>
     </main>
   );
 }
