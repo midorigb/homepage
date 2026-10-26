@@ -4,101 +4,87 @@ const content = {
   en: {
     lang: "en",
     navigationLabel: "Primary navigation",
-    nav: [["Method", "#method"], ["Work", "#work"], ["Focus", "#focus"], ["Principles", "#principles"]],
+    nav: [["Capabilities", "#method"], ["Work", "#work"], ["R&D", "#focus"]],
     kicker: "Jamie",
     headline: ["Technology &", "Product Architect"],
-    intro: "I work on digital resource standards, platform design, and AI product prototypes, with a growing focus on robotics and human–machine interaction.",
+    intro: "Digital resources, knowledge systems, interactive applications, and applied AI.",
     explore: "Explore selected work",
-    signal: ["Standards", "Platforms", "Agentic AI", "Robotics"],
-    methodEyebrow: "Scope",
-    methodHeading: "What I work on",
-    methodIntro: "Standards, platforms, applied AI, and physical interaction.",
+    signal: ["Digital resources", "Knowledge systems", "Interactive applications", "Applied AI"],
+    methodEyebrow: "Capabilities",
+    methodHeading: "Technical scope",
+    methodIntro: "Four connected layers, from structured resources to intelligent interaction.",
     stages: [
-      { number: "01", verb: "Define", title: "Standards & data models", description: "Resource types, users, metadata, quality requirements, and governance rules.", outputs: ["Standards", "Metadata", "Governance", "Product scope"] },
-      { number: "02", verb: "Build", title: "Platforms & workflows", description: "Product structure, operating processes, functional requirements, and delivery.", outputs: ["Platforms", "Workflows", "System design", "Delivery"] },
-      { number: "03", verb: "Augment", title: "AI evaluation & agents", description: "Model quality, latency, cost, agent workflows, and human review.", outputs: ["LLM systems", "Agents / MCP", "Evaluation", "Human-in-the-loop"] },
-      { number: "04", verb: "Connect", title: "Robotics & interaction", description: "Sensors, devices, robot behavior, spatial interaction, and human feedback.", outputs: ["Robotics", "HRI", "Spatial interaction", "Experiences"] },
+      { number: "01", verb: "Foundation", title: "Digital resources", description: "Standards, metadata, production workflows, governance, and management platforms.", outputs: ["Standards", "Metadata", "Governance", "Platforms"] },
+      { number: "02", verb: "Structure", title: "Knowledge systems", description: "Knowledge graphs, data integration, search, discovery, and visualization.", outputs: ["Knowledge graph", "Big data", "Search", "Visualization"] },
+      { number: "03", verb: "Application", title: "Interactive applications", description: "AR, digital interpretation, spatial experience, and public-facing products.", outputs: ["AR", "Interaction", "Spatial experience", "Applications"] },
+      { number: "04", verb: "Extension", title: "Applied intelligence", description: "LLM evaluation, agents, MCP, multimodal AI, and human–machine interaction.", outputs: ["LLM", "Agents / MCP", "Multimodal AI", "Robotics"] },
     ],
     workEyebrow: "Projects",
     workHeading: "Selected work",
-    workIntro: "Delivered, in development, and prototype work. Public summaries are anonymized.",
+    workIntro: "Three areas of project experience. Public summaries are anonymized.",
     labels: { challenge: "Challenge", approach: "Approach", output: "Output" },
     projects: [
-      { number: "01", status: "Delivered", title: "Museum digital resource system", challenge: "Create consistency across fragmented digital resources and production practices.", approach: "Define resource standards, metadata, quality rules, and operating workflows before shaping the platform.", output: "A standards framework and a working digital resource management platform.", tags: ["Governance", "Metadata", "Platform", "Museums"] },
-      { number: "02", status: "In development", title: "Local LLM evaluation workspace", challenge: "Choose local language models using evidence relevant to real tasks rather than generic rankings.", approach: "Compare quality, latency, memory use, and task performance through repeatable evaluation flows.", output: "An evaluation workspace for practical model selection and trade-off analysis.", tags: ["LLM", "Evaluation", "Local AI", "Decision support"] },
-      { number: "03", status: "Prototype", title: "Embodied interaction concepts", challenge: "Make agents and robotic systems understandable and useful in physical environments.", approach: "Explore how sensing, agent behavior, and human-centered interaction can work as one product experience.", output: "Interaction concepts and prototypes connecting software intelligence with physical systems.", tags: ["Robotics", "Agents", "HRI", "Physical space"] },
+      { number: "01", status: "Delivered", title: "Digital resource standards & platform", challenge: "Standardize fragmented resources, production processes, and management rules.", approach: "Define metadata, quality rules, and workflows, then translate them into platform functions.", output: "Digital resource standards and an operational management platform.", tags: ["Standards", "Metadata", "Workflow", "Platform"] },
+      { number: "02", status: "Project work", title: "Knowledge graph & data applications", challenge: "Connect data from different sources and make it easier to retrieve and use.", approach: "Organize entities and relationships, integrate data, and design retrieval and visualization functions.", output: "Knowledge graph and data applications supporting discovery and analysis.", tags: ["Knowledge graph", "Big data", "Search", "Visualization"] },
+      { number: "03", status: "Project work", title: "AR & spatial applications", challenge: "Connect digital content with exhibitions and physical environments.", approach: "Design content structure, user flow, and AR interaction for specific spaces.", output: "AR and interactive applications for spatial content access and interpretation.", tags: ["AR", "Interaction", "Spatial computing", "Digital content"] },
     ],
-    focusEyebrow: "Focus",
-    focusHeading: "Areas of focus",
-    focusIntro: "Digital resources, knowledge systems, AI products, and physical interaction.",
+    focusEyebrow: "Current R&D",
+    focusHeading: "Current R&D",
+    focusIntro: "Extending existing resource, knowledge, and application systems with AI and physical interaction.",
     focusAreas: [
-      ["Cultural institutions", "Collections, digital resources, interpretation, and public experience."],
-      ["Knowledge organizations", "Complex content, governance, discovery, and operational platforms."],
-      ["AI-native products", "Agentic workflows, evaluation, human oversight, and useful automation."],
-      ["Physical environments", "Robotics, devices, sensing, and interaction beyond the screen."],
+      ["Local model evaluation", "Quality, latency, memory use, and task-specific comparison."],
+      ["Agent workflows", "Agents, MCP, tool use, and human review."],
+      ["AI-assisted resources", "Classification, extraction, retrieval, and quality control."],
+      ["Robotics & HRI", "Sensing, behavior, control, and interaction in physical spaces."],
     ],
-    toolkitLabel: "Working vocabulary",
+    toolkitLabel: "Technology",
     toolkit: ["Digital resource standards", "Metadata", "Product architecture", "Multimodal AI", "LLM evaluation", "Agents", "MCP", "Human-in-the-loop", "Robotics", "HRI"],
-    principlesEyebrow: "Review",
-    principlesHeading: "Review criteria",
-    principles: [
-      ["01", "Resource quality", "Clear names, metadata, ownership, and quality rules."],
-      ["02", "Workflow fit", "Fewer unnecessary steps and clearer decisions for users."],
-      ["03", "Human control", "Visible system limits, reliable feedback, and manual intervention."],
-    ],
     closingEyebrow: "Jamie · Technology & Product Architect",
-    closingHeading: "Standards, platforms, AI prototypes, and interaction design.",
-    closingNote: "Selected work and ongoing experiments across digital resources, AI, and robotics.",
+    closingHeading: "Digital resources · Knowledge systems · Applied AI",
+    closingNote: "Selected project work and current R&D.",
     backToTop: "Back to top ↑",
   },
   zh: {
     lang: "zh-CN",
     navigationLabel: "主导航",
-    nav: [["方法", "#method"], ["案例", "#work"], ["领域", "#focus"], ["原则", "#principles"]],
+    nav: [["能力", "#method"], ["项目", "#work"], ["研发", "#focus"]],
     kicker: "Jamie",
     headline: ["技术与产品", "架构师"],
-    intro: "我主要从事数字资源标准、平台设计和 AI 产品原型，也在持续探索机器人与人机交互。",
+    intro: "数字资源、知识系统、交互应用与应用 AI。",
     explore: "查看代表项目",
-    signal: ["标准", "平台", "智能体 AI", "机器人"],
-    methodEyebrow: "工作范围",
-    methodHeading: "主要工作",
-    methodIntro: "标准、平台、应用 AI 与实体交互。",
+    signal: ["数字资源", "知识系统", "交互应用", "应用 AI"],
+    methodEyebrow: "能力",
+    methodHeading: "技术范围",
+    methodIntro: "从结构化资源到智能交互的四个关联层次。",
     stages: [
-      { number: "01", verb: "定义", title: "标准与数据模型", description: "资源类型、使用者、元数据、质量要求与治理规则。", outputs: ["标准规范", "元数据", "治理体系", "产品范围"] },
-      { number: "02", verb: "构建", title: "平台与工作流程", description: "产品结构、业务流程、功能需求与项目交付。", outputs: ["平台", "业务流程", "系统设计", "项目交付"] },
-      { number: "03", verb: "赋能", title: "AI 评测与智能体", description: "模型效果、响应速度、使用成本、Agent 工作流与人工审核。", outputs: ["大模型系统", "Agent / MCP", "模型评测", "人在回路"] },
-      { number: "04", verb: "连接", title: "机器人与交互", description: "传感器、设备、机器人行为、空间交互与用户反馈。", outputs: ["机器人", "人机交互", "空间交互", "体验设计"] },
+      { number: "01", verb: "基础", title: "数字资源", description: "标准规范、元数据、生产流程、资源治理与管理平台。", outputs: ["标准规范", "元数据", "资源治理", "管理平台"] },
+      { number: "02", verb: "组织", title: "知识系统", description: "知识图谱、数据整合、检索发现与数据可视化。", outputs: ["知识图谱", "大数据", "检索", "可视化"] },
+      { number: "03", verb: "应用", title: "交互应用", description: "AR、数字阐释、空间体验与公众端产品。", outputs: ["AR", "交互", "空间体验", "应用产品"] },
+      { number: "04", verb: "延伸", title: "应用智能", description: "大模型评测、Agent、MCP、多模态 AI 与人机交互。", outputs: ["大模型", "Agent / MCP", "多模态 AI", "机器人"] },
     ],
     workEyebrow: "项目",
     workHeading: "代表项目",
-    workIntro: "包括已交付、开发中与原型阶段的工作。公开内容经过匿名化处理。",
+    workIntro: "三个项目实践方向。公开内容经过匿名化处理。",
     labels: { challenge: "挑战", approach: "方法", output: "交付" },
     projects: [
-      { number: "01", status: "已交付", title: "博物馆数字资源体系与平台", challenge: "解决数字资源分散、生产方式不一致以及管理规则缺失的问题。", approach: "先制定资源标准、元数据、质量规则和生产流程，再据此规划平台。", output: "一套数字资源标准规范，以及可运行的数字资源管理平台。", tags: ["资源治理", "元数据", "平台", "博物馆"] },
-      { number: "02", status: "开发中", title: "本地大模型评测工作台", challenge: "不依赖通用排行榜，而是根据真实任务选择适合本地运行的语言模型。", approach: "以可重复的评测流程比较模型质量、响应速度、内存占用和任务表现。", output: "用于模型选择与权衡分析的本地评测工作台。", tags: ["大语言模型", "模型评测", "本地 AI", "决策支持"] },
-      { number: "03", status: "原型", title: "具身交互概念", challenge: "让智能体与机器人系统在物理环境中变得易理解、可控制并真正有用。", approach: "探索环境感知、智能体行为与以人为中心的交互如何形成完整产品体验。", output: "连接软件智能与物理系统的交互方案和原型。", tags: ["机器人", "智能体", "人机交互", "实体空间"] },
+      { number: "01", status: "已交付", title: "数字资源标准与管理平台", challenge: "统一分散的数字资源、生产流程与管理规则。", approach: "制定元数据、质量规则和工作流程，再将其转化为平台功能。", output: "数字资源标准规范与投入运行的管理平台。", tags: ["标准规范", "元数据", "工作流程", "平台"] },
+      { number: "02", status: "项目实践", title: "知识图谱与数据应用", challenge: "关联不同来源的数据，并提高数据的检索与利用效率。", approach: "组织实体与关系，整合数据，并设计检索和可视化功能。", output: "支持知识发现与分析的知识图谱和数据应用。", tags: ["知识图谱", "大数据", "检索", "可视化"] },
+      { number: "03", status: "项目实践", title: "AR 与空间应用", challenge: "将数字内容与展览及实体环境连接起来。", approach: "针对具体空间设计内容结构、用户流程与 AR 交互。", output: "用于空间内容访问与阐释的 AR 和交互应用。", tags: ["AR", "交互", "空间计算", "数字内容"] },
     ],
-    focusEyebrow: "方向",
-    focusHeading: "关注方向",
-    focusIntro: "数字资源、知识系统、AI 产品与实体交互。",
+    focusEyebrow: "当前研发",
+    focusHeading: "当前研发",
+    focusIntro: "在已有资源、知识和应用系统上，继续扩展 AI 与实体交互能力。",
     focusAreas: [
-      ["文化机构", "藏品、数字资源、知识阐释与公众体验。"],
-      ["知识型组织", "复杂内容、资源治理、检索发现与运营平台。"],
-      ["AI 原生产品", "智能体工作流、模型评测、人工监督与有效自动化。"],
-      ["实体环境", "机器人、设备、环境感知与屏幕之外的交互。"],
+      ["本地模型评测", "模型效果、响应速度、内存占用与任务表现。"],
+      ["Agent 工作流", "Agent、MCP、工具调用与人工审核。"],
+      ["AI 辅助资源处理", "分类、信息提取、检索与质量检查。"],
+      ["机器人与人机交互", "环境感知、行为、控制与实体空间交互。"],
     ],
-    toolkitLabel: "技术与方法",
+    toolkitLabel: "技术",
     toolkit: ["数字资源标准", "元数据", "产品架构", "多模态 AI", "大模型评测", "智能体", "MCP", "人在回路", "机器人", "人机交互"],
-    principlesEyebrow: "评审",
-    principlesHeading: "判断标准",
-    principles: [
-      ["01", "资源质量", "清晰的名称、元数据、责任归属与质量规则。"],
-      ["02", "流程适配", "减少无效步骤，让使用者更容易完成判断。"],
-      ["03", "人工控制", "明确的系统边界、可靠反馈与人工介入方式。"],
-    ],
     closingEyebrow: "Jamie · 技术与产品架构师",
-    closingHeading: "标准、平台、AI 原型与交互设计。",
-    closingNote: "关于数字资源、AI 与机器人的代表性工作和持续实验。",
+    closingHeading: "数字资源 · 知识系统 · 应用 AI",
+    closingNote: "代表项目与当前研发。",
     backToTop: "返回顶部 ↑",
   },
 } as const;
@@ -121,22 +107,18 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
         <div className="hero-summary"><p>{copy.intro}</p><a className="text-link" href="#work">{copy.explore} <span aria-hidden="true">↓</span></a></div>
         <ul className="signal-list" aria-label={isChinese ? "核心方向" : "Core signals"}>{copy.signal.map((item, index) => <li key={item}><span>0{index + 1}</span>{item}</li>)}</ul>
       </section>
-      <section className="section work-section" id="work">
-        <div className="section-intro"><p className="eyebrow">{copy.workEyebrow}</p><div><h2>{copy.workHeading}</h2><p>{copy.workIntro}</p></div></div>
-        <div className="case-list">{copy.projects.map((project, index) => <article className={`case case-${index + 1}`} key={project.number}><div className="project-visual" aria-hidden="true"><span>{project.number}</span><i /><i /><i /></div><div className="case-content"><div className="case-top"><span>{project.number}</span><span className="status">{project.status}</span></div><h3>{project.title}</h3><dl><div><dt>{copy.labels.challenge}</dt><dd>{project.challenge}</dd></div><div><dt>{copy.labels.approach}</dt><dd>{project.approach}</dd></div><div><dt>{copy.labels.output}</dt><dd>{project.output}</dd></div></dl><ul className="tag-list">{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul></div></article>)}</div>
-      </section>
       <section className="section method-section" id="method">
         <div className="section-intro"><p className="eyebrow">{copy.methodEyebrow}</p><div><h2>{copy.methodHeading}</h2><p>{copy.methodIntro}</p></div></div>
         <div className="stage-list">{copy.stages.map((stage) => <article className="stage" key={stage.number}><div className="stage-index"><span>{stage.number}</span><strong>{stage.verb}</strong></div><h3>{stage.title}</h3><p>{stage.description}</p><ul>{stage.outputs.map((item) => <li key={item}>{item}</li>)}</ul></article>)}</div>
+      </section>
+      <section className="section work-section" id="work">
+        <div className="section-intro"><p className="eyebrow">{copy.workEyebrow}</p><div><h2>{copy.workHeading}</h2><p>{copy.workIntro}</p></div></div>
+        <div className="case-list">{copy.projects.map((project, index) => <article className={`case case-${index + 1}`} key={project.number}><div className="project-visual" aria-hidden="true"><span>{project.number}</span><i /><i /><i /></div><div className="case-content"><div className="case-top"><span>{project.number}</span><span className="status">{project.status}</span></div><h3>{project.title}</h3><dl><div><dt>{copy.labels.challenge}</dt><dd>{project.challenge}</dd></div><div><dt>{copy.labels.approach}</dt><dd>{project.approach}</dd></div><div><dt>{copy.labels.output}</dt><dd>{project.output}</dd></div></dl><ul className="tag-list">{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul></div></article>)}</div>
       </section>
       <section className="section focus-section" id="focus">
         <div className="section-intro"><p className="eyebrow">{copy.focusEyebrow}</p><div><h2>{copy.focusHeading}</h2><p>{copy.focusIntro}</p></div></div>
         <div className="focus-grid">{copy.focusAreas.map(([title, description], index) => <article key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{description}</p></article>)}</div>
         <div className="toolkit"><p>{copy.toolkitLabel}</p><ul>{copy.toolkit.map((item) => <li key={item}>{item}</li>)}</ul></div>
-      </section>
-      <section className="section principles-section" id="principles">
-        <div className="section-intro"><p className="eyebrow">{copy.principlesEyebrow}</p><div><h2>{copy.principlesHeading}</h2></div></div>
-        <div className="principle-grid">{copy.principles.map(([number, title, description]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{description}</p></article>)}</div>
       </section>
       <footer><p className="eyebrow">{copy.closingEyebrow}</p><h2>{copy.closingHeading}</h2><p className="footer-note">{copy.closingNote}</p><div className="footer-bottom"><span>Jamie © 2026</span><a href="#top">{copy.backToTop}</a></div></footer>
     </main>
