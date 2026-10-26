@@ -135,9 +135,6 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
   return (
     <main lang={copy.lang}>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label={copy.homeLabel}>
-          JD<span className="brand-dot">.</span>
-        </a>
         <nav aria-label={copy.navigationLabel}>
           <a href="#work">{copy.nav[0]}</a>
           <a href="#practice">{copy.nav[1]}</a>
