@@ -5,14 +5,14 @@ const content = {
     lang: "en",
     navigationLabel: "Primary navigation",
     nav: [["Method", "#method"], ["Work", "#work"], ["Focus", "#focus"], ["Principles", "#principles"]],
-    kicker: "Jamie · Product, systems, and technology",
-    headline: ["From complex resources", "to operational systems", "and real-world intelligence."],
-    intro: "I connect standards, platforms, AI, and robotics—turning complex technology into systems that can be governed, operated, and experienced.",
-    explore: "See how I work",
+    kicker: "Technology & Product Architect",
+    headline: ["I design useful systems", "for complex worlds."],
+    intro: "I translate complex domain needs into digital products, intelligent systems, and experiences that work in the real world.",
+    explore: "Explore selected work",
     signal: ["Standards", "Platforms", "Agentic AI", "Robotics"],
     methodEyebrow: "How I create value",
-    methodHeading: "One connected path from ambiguity to experience.",
-    methodIntro: "The work is not four unrelated specialties. It is an end-to-end way of structuring complexity, building systems, adding intelligence, and connecting them to people and places.",
+    methodHeading: "From an unclear problem to a system people can use.",
+    methodIntro: "My role often spans the space between domain experts, product decisions, and technical delivery.",
     stages: [
       { number: "01", verb: "Define", title: "Make complexity legible.", description: "Clarify the problem, establish standards, shape data models, and define the boundaries of the product.", outputs: ["Standards", "Metadata", "Governance", "Product scope"] },
       { number: "02", verb: "Build", title: "Turn structure into systems.", description: "Translate rules and workflows into platform capabilities, product architecture, and operational tools.", outputs: ["Platforms", "Workflows", "System design", "Delivery"] },
@@ -20,8 +20,8 @@ const content = {
       { number: "04", verb: "Connect", title: "Bring systems into the world.", description: "Extend digital capabilities into robots, devices, cultural spaces, and human interactions.", outputs: ["Robotics", "HRI", "Spatial interaction", "Experiences"] },
     ],
     workEyebrow: "Selected work",
-    workHeading: "Evidence, not a list of buzzwords.",
-    workIntro: "Public summaries are intentionally anonymized. Each item is labeled by its actual level of maturity.",
+    workHeading: "Selected projects and ongoing experiments.",
+    workIntro: "A selection of work across digital resources, applied AI, and embodied interaction. Public summaries are intentionally anonymized.",
     labels: { challenge: "Challenge", approach: "Approach", output: "Output" },
     projects: [
       { number: "01", status: "Delivered", title: "Museum digital resource system", challenge: "Create consistency across fragmented digital resources and production practices.", approach: "Define resource standards, metadata, quality rules, and operating workflows before shaping the platform.", output: "A standards framework and a working digital resource management platform.", tags: ["Governance", "Metadata", "Platform", "Museums"] },
@@ -55,14 +55,14 @@ const content = {
     lang: "zh-CN",
     navigationLabel: "主导航",
     nav: [["方法", "#method"], ["案例", "#work"], ["领域", "#focus"], ["原则", "#principles"]],
-    kicker: "Jamie · 产品、系统与技术实践",
-    headline: ["从复杂资源，", "到可运行的系统，", "再到真实世界的智能。"],
-    intro: "我连接标准、平台、AI 与机器人，把复杂技术转化为可治理、可运行、可体验的系统。",
-    explore: "了解我的工作方式",
+    kicker: "技术与产品架构师",
+    headline: ["为复杂世界，", "设计真正可用的系统。"],
+    intro: "我将复杂领域的需求，转化为数字产品、智能系统，以及能够在真实场景中运行的体验。",
+    explore: "查看代表项目",
     signal: ["标准", "平台", "智能体 AI", "机器人"],
     methodEyebrow: "如何创造价值",
-    methodHeading: "一条从模糊问题走向真实体验的完整路径。",
-    methodIntro: "这不是四项彼此无关的技能，而是一套端到端的方法：梳理复杂性、构建系统、赋予智能，并最终连接人与真实空间。",
+    methodHeading: "从尚未说清的问题，到人们真正能用的系统。",
+    methodIntro: "我的工作通常位于领域专家、产品决策与技术交付的交汇处。",
     stages: [
       { number: "01", verb: "定义", title: "让复杂问题变得清晰。", description: "理解问题与约束，建立标准、数据模型和治理规则，并明确产品边界。", outputs: ["标准规范", "元数据", "治理体系", "产品范围"] },
       { number: "02", verb: "构建", title: "把结构转化为系统。", description: "将规则与流程落实为平台能力、产品架构和可持续运行的工具。", outputs: ["平台", "业务流程", "系统设计", "项目交付"] },
@@ -70,8 +70,8 @@ const content = {
       { number: "04", verb: "连接", title: "让系统进入真实世界。", description: "将数字能力延伸到机器人、设备、文化空间以及人与机器的交互中。", outputs: ["机器人", "人机交互", "空间交互", "体验设计"] },
     ],
     workEyebrow: "代表性案例",
-    workHeading: "用真实交付证明能力，而不是堆砌关键词。",
-    workIntro: "公开内容经过匿名化处理，并按照实际成熟度标注，避免夸大实验与原型。",
+    workHeading: "代表项目与持续探索。",
+    workIntro: "部分工作横跨数字资源、应用人工智能与具身交互。公开内容经过匿名化处理。",
     labels: { challenge: "挑战", approach: "方法", output: "交付" },
     projects: [
       { number: "01", status: "已交付", title: "博物馆数字资源体系与平台", challenge: "解决数字资源分散、生产方式不一致以及管理规则缺失的问题。", approach: "先制定资源标准、元数据、质量规则和生产流程，再据此规划平台。", output: "一套数字资源标准规范，以及可运行的数字资源管理平台。", tags: ["资源治理", "元数据", "平台", "博物馆"] },
@@ -118,16 +118,16 @@ export function PortfolioPage({ locale }: { locale: Locale }) {
       <section className="hero" id="top">
         <p className="kicker"><span className="signal" />{copy.kicker}</p>
         <h1>{copy.headline.map((line, index) => <span className={index === 2 ? "accent-line" : undefined} key={line}>{line}</span>)}</h1>
-        <div className="hero-summary"><p>{copy.intro}</p><a className="text-link" href="#method">{copy.explore} <span aria-hidden="true">↓</span></a></div>
+        <div className="hero-summary"><p>{copy.intro}</p><a className="text-link" href="#work">{copy.explore} <span aria-hidden="true">↓</span></a></div>
         <ul className="signal-list" aria-label={isChinese ? "核心方向" : "Core signals"}>{copy.signal.map((item, index) => <li key={item}><span>0{index + 1}</span>{item}</li>)}</ul>
+      </section>
+      <section className="section work-section" id="work">
+        <div className="section-intro"><p className="eyebrow">{copy.workEyebrow}</p><div><h2>{copy.workHeading}</h2><p>{copy.workIntro}</p></div></div>
+        <div className="case-list">{copy.projects.map((project, index) => <article className={`case case-${index + 1}`} key={project.number}><div className="project-visual" aria-hidden="true"><span>{project.number}</span><i /><i /><i /></div><div className="case-content"><div className="case-top"><span>{project.number}</span><span className="status">{project.status}</span></div><h3>{project.title}</h3><dl><div><dt>{copy.labels.challenge}</dt><dd>{project.challenge}</dd></div><div><dt>{copy.labels.approach}</dt><dd>{project.approach}</dd></div><div><dt>{copy.labels.output}</dt><dd>{project.output}</dd></div></dl><ul className="tag-list">{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul></div></article>)}</div>
       </section>
       <section className="section method-section" id="method">
         <div className="section-intro"><p className="eyebrow">{copy.methodEyebrow}</p><div><h2>{copy.methodHeading}</h2><p>{copy.methodIntro}</p></div></div>
         <div className="stage-list">{copy.stages.map((stage) => <article className="stage" key={stage.number}><div className="stage-index"><span>{stage.number}</span><strong>{stage.verb}</strong></div><h3>{stage.title}</h3><p>{stage.description}</p><ul>{stage.outputs.map((item) => <li key={item}>{item}</li>)}</ul></article>)}</div>
-      </section>
-      <section className="section work-section" id="work">
-        <div className="section-intro"><p className="eyebrow">{copy.workEyebrow}</p><div><h2>{copy.workHeading}</h2><p>{copy.workIntro}</p></div></div>
-        <div className="case-list">{copy.projects.map((project) => <article className="case" key={project.number}><div className="case-top"><span>{project.number}</span><span className="status">{project.status}</span></div><h3>{project.title}</h3><dl><div><dt>{copy.labels.challenge}</dt><dd>{project.challenge}</dd></div><div><dt>{copy.labels.approach}</dt><dd>{project.approach}</dd></div><div><dt>{copy.labels.output}</dt><dd>{project.output}</dd></div></dl><ul className="tag-list">{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul></article>)}</div>
       </section>
       <section className="section focus-section" id="focus">
         <div className="section-intro"><p className="eyebrow">{copy.focusEyebrow}</p><div><h2>{copy.focusHeading}</h2><p>{copy.focusIntro}</p></div></div>

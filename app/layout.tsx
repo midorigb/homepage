@@ -21,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase,
-    title: "Jamie — Product, Systems & Applied Intelligence",
+    title: "Jamie — Technology & Product Architect",
     description:
       "Turning complex resources into operational systems, then extending them with intelligence and real-world interaction.",
     alternates: {
@@ -36,13 +36,13 @@ export async function generateMetadata(): Promise<Metadata> {
       shortcut: "/favicon.svg",
     },
     openGraph: {
-      title: "Jamie — Product, Systems & Applied Intelligence",
+      title: "Jamie — Technology & Product Architect",
       description: "From trusted digital resources to intelligent products and real-world experiences.",
       images: [new URL("/og.png", metadataBase).toString()],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Jamie — Product, Systems & Applied Intelligence",
+      title: "Jamie — Technology & Product Architect",
       description: "From trusted digital resources to intelligent products and real-world experiences.",
       images: [new URL("/og.png", metadataBase).toString()],
     },
