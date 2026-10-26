@@ -45,11 +45,12 @@ const content = {
       },
     ],
     practiceEyebrow: "Field of practice",
-    practiceHeading: "Three disciplines. One connected point of view.",
+    practiceHeading: "Four disciplines. One connected point of view.",
     capabilities: [
       ["01", "AI & Agents", "Local models, evaluation systems, MCP workflows, and useful AI products."],
       ["02", "Robotics", "Embodied intelligence, interaction design, sensing, and product concepts."],
       ["03", "Digital Heritage", "Museum digitization, collection intelligence, and cultural storytelling."],
+      ["04", "Digital Resources", "Museum digital resource standards, governance frameworks, and platform architecture."],
     ],
     aboutEyebrow: "About",
     aboutHeading:
@@ -108,11 +109,12 @@ const content = {
       },
     ],
     practiceEyebrow: "实践方向",
-    practiceHeading: "三个领域，一套彼此连接的方法。",
+    practiceHeading: "四个领域，一套彼此连接的方法。",
     capabilities: [
       ["01", "AI 与智能体", "本地模型、评测系统、MCP 工作流，以及真正有用的 AI 产品。"],
       ["02", "机器人", "具身智能、交互设计、环境感知与产品概念。"],
       ["03", "数字文化遗产", "博物馆数字化、藏品智能与文化叙事。"],
+      ["04", "数字资源", "制定博物馆数字资源标准规范，构建资源治理体系与管理平台。"],
     ],
     aboutEyebrow: "关于我",
     aboutHeading: "技术应当拓展人们理解、创造与体验世界的方式。",

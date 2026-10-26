@@ -340,9 +340,15 @@ main[lang="zh-CN"] .hero h1 span:nth-child(1) {
 
 .capability-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid #cac8c0;
   border-left: 1px solid #cac8c0;
+}
+
+@media (max-width: 1200px) and (min-width: 901px) {
+  .capability-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .capability {
